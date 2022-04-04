@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b6e768e951.js" crossorigin="anonymous"></script>
+    <title>Front-end 2</title>
+    <style>
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+   background-color: hsl(217, 54%, 11%);
+   padding: 5rem;
+}
+
+.row{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg{
+    background-color: hsl(216, 50%, 16%);
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/*                hover */
+img{
+    max-width: 100%;
+}
+.card--main-image {
+    position: relative;
+}
+
+.card--main-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.card--main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.card--main-image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*                  hover */
+
+
+.down-text{
+    margin: .5rem 0 ;
+}
+.heading{
+    color: white;
+    /* font-stretch: expanded; */
+}
+.heading:hover{
+    color: hsl(178, 100%, 50%);;
+}
+.para{
+    color: hsl(215, 51%, 70%);
+    margin-top: .7rem;
+    font-size: 16px;
+    font-weight: 200;
+}
+.logo-text{
+    /* display: flex; */
+    /* margin: auto; */
+    /* justify-content:flex-start; */
+    margin: 1.4rem 0;
+}
+.eth{
+    color:hsl(178, 100%, 50%) ;
+}
+
+.left-para{
+display: inline;
+color: hsl(178, 100%, 50%);
+margin-left: .3rem;
+}
+
+.right-para{
+    display: inline;
+    text-align: right;
+    float: right;
+    color: hsl(215, 51%, 70%);
+}
+.right-cont{
+    display: inline;
+}
+.hr{
+    border-style: solid;
+    border-width: .01px;
+    /* border: .5px; */
+    margin: 1rem 0;
+    border-color:hsl(215, 51%, 70%);
+}
+.avatar{
+    display: inline-block;
+}
+.ava{
+    display: inline-block;
+    width: 15%;
+    border: 1px solid white ;
+    border-radius: 20px ;
+    height: auto;
+    vertical-align: middle;
+}
+.ava-para{
+    display: inline-block;
+    margin-left: 1rem;
+    color: hsl(215, 51%, 70%);
+
+}
+span{
+    color: white;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color:white ;
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="bg">
+
+                <div class="card--main-image">
+                    <img src="/image-equilibrium.jpg" class="card__image" alt="">
+                    <div>
+                      <img src="./images/icon-view.svg" alt="" />
+                    </div>
+                  </div>
+
+
+                <!-- <div class=".card--main-image">
+                    <img class="img-cube" src="/image-equilibrium.jpg" alt="">
+                    <div>
+                        
+                    </div>
+                </div> -->
+                <!-- <img class="solid-img" src="" alt=""> -->
+                
+                <div class="down-text">
+                    <h4 class="heading">Equilibrium #3429</h4>
+                    <p class="para">Our Equilibrium collection promotes balance and calm</p>
+                </div>
+
+                <div class="logo-text">
+                    <i class="fa-brands eth fa-ethereum"></i>
+                    <p class="left-para">0.041ETH</p>
+                    <div class="right-cont">
+                        <p class="right-para">3 days left</p>
+                        <hr class="hr">
+                    </div>
+                </div>
+                <div class="avatar">
+                <img class="ava" src="/image-avatar.png" alt="">
+                    <p class="ava-para">Creation of  <a href="">Jules Wyvern</a>   </p>  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
